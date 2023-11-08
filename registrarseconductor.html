@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Regístrate en TUbotella y disfruta de los mejores servicios de transporte de bebidas alcohólicas.">
+  <meta name="keywords" content="tubotella, transporte, bebidas, alcohol, registro, inicio de sesión">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrate en TUbotella</title>
+  <link rel="stylesheet" href="registrarseconductor.css">
+  
+  <div class="container-main right-panel-active">
+    <!-- Sign Up -->
+    <div class="container__form container-signup">
+        <form action="http://localhost:3000/register" method="POST" enctype="multipart/form-data" class="form" id="form-signup">
+            <h1 class="form__title">Registarse</h1>
+            <input type="text" placeholder="Nombre y Apellido" class="input" id="nombre" name="nombre" required>
+            <input type="text" placeholder="Dirección" class="input" id="direccion" name="direccion" required>
+            <input type="tel" placeholder="Teléfono" class="input" id="telefono" name="telefono" pattern="\+53[5][0-9]{7}" required>
+            <select id="provincia" name="provincia" class="input" required>
+              <option value="" disabled selected>Provincia</option>
+              <option value="Pinar del Río">Pinar del Río</option>
+              <option value="Artemisa">Artemisa</option>
+              <option value="La Habana">La Habana</option>
+              <option value="Mayabeque">Mayabeque</option>
+              <option value="Matanzas">Matanzas</option>
+              <option value="Cienfuegos">Cienfuegos</option>
+              <option value="Villa Clara">Villa Clara</option>
+              <option value="Sancti Spíritus">Sancti Spíritus</option>
+              <option value="Ciego de Ávila">Ciego de Ávila</option>
+              <option value="Camagüey">Camagüey</option>
+              <option value="Las Tunas">Las Tunas</option>
+              <option value="Granma">Granma</option>
+              <option value="Holguín">Holguín</option>
+              <option value="Santiago de Cuba">Santiago de Cuba</option>
+              <option value="Guantánamo">Guantánamo</option>
+              <option value="Isla de la Juventud">Isla de la Juventud</option>
+            </select>        
+            <input type="text" placeholder="Carnet de identidad" class="input" id="ci" name="ci" pattern="[0-9]{2}[0,1][0-9][0-3][0-9][0-9]{5}" required>
+            <input type="email" placeholder="Email" class="input" id="email" name="email" required>
+            <input type="password" placeholder="Contraseña" class="input" id="password" name="password" required>
+            <a href="iniciosesionconductor.html" class="link">Iniciar Sesión</a>
+            <button type="submit" class=btn>Empezar</button> 
+          </form>    
+    </div>
+  </div>
+  <script src="formconductor.js"></script>
+</body>
+</html>
